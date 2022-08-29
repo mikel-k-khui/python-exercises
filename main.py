@@ -1,8 +1,8 @@
-import scripts.rps as rps
-import scripts.fib_recursion as fib
+from scripts.rps import get_choices, check_win # import module
+import scripts.fib_recursion as fib # import from files
 
-choices = rps.get_choices()
-print(f"Choices were {choices} and {rps.check_win(choices)}")
+choices = get_choices()
+print(f"Choices were {choices} and {check_win(choices)}")
 
 print(f"The 10th fib seq is {fib.fib_recursion(10)}")
 
