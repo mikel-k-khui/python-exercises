@@ -1,6 +1,6 @@
 import random
 
-game_choices = ["rock", "paper", "scissors"]
+game_choices = ("rock", "paper", "scissors")
 
 def get_choices(player_choice = random.choice(game_choices)):
   if player_choice is None:
