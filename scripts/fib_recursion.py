@@ -1,4 +1,4 @@
-def fib_recursion(k):
+def fib_recursion(k: int) -> int:
   if(k > 2):
     result = fib_recursion(k - 2) + fib_recursion(k - 1)
   elif(k == 2):
