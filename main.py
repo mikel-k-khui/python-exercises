@@ -1,7 +1,8 @@
+import argparse
 from scripts.rps import get_choices, check_win # import module
 import scripts.fib_recursion as fib # import from files
 from scripts.lambda_reduce import total_expenses
-import argparse
+from scripts.dog import Dog
 
 # get user input
 parser = argparse.ArgumentParser(description = "print something")
@@ -18,3 +19,8 @@ print(f"The 10th fib seq is {fib.fib_recursion(10)}")
 print(['test', 'that', 'those'][0:2]) 
 
 print(f"what is the total travel expenses? {total_expenses([('gas', 20), ('hotel', 90), ('drinks', 40)])}")
+
+dog = Dog(2, "Yorkie")
+dog.bark()
+dog.walk()
+print(help(Dog))
