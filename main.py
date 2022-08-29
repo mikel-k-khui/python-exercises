@@ -1,5 +1,6 @@
 from scripts.rps import get_choices, check_win # import module
 import scripts.fib_recursion as fib # import from files
+from scripts.lambda_reduce import total_expenses
 import argparse
 
 # get user input
@@ -15,3 +16,5 @@ print(f"The 10th fib seq is {fib.fib_recursion(10)}")
 
 # apply slicing shorthand to list
 print(['test', 'that', 'those'][0:2]) 
+
+print(f"what is the total travel expenses? {total_expenses([('gas', 20), ('hotel', 90), ('drinks', 40)])}")
