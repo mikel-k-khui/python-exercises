@@ -20,7 +20,9 @@ print(['test', 'that', 'those'][0:2])
 
 print(f"what is the total travel expenses? {total_expenses([('gas', 20), ('hotel', 90), ('drinks', 40)])}")
 
-dog = Dog(2, "Yorkie")
-dog.bark()
-dog.walk()
-print(help(Dog))
+Spock = Dog("Spock", 9)
+Kirk = Dog("Kirk", 8)
+Spock.bark()
+Kirk.walk()
+print(f"Is Spock older than Kirk? {Spock > Kirk}")
+# print(help(Dog))

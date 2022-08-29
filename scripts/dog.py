@@ -3,14 +3,17 @@ class Animal:
     print("Walking...")
 
 class Dog(Animal):
-  def __init__(self, name, breed):
+  def __init__(self, name, age):
     """Create a dog subclass of animal"""
     self.name = name
-    self.breed = breed
+    self.age = age
+
+  def __gt__(self, other): #operator overload
+    return True if self.age > other.age else False
 
   def bark(self):
     """Let the dogie bark"""
     print("woof!")
 
   def walk(self):
-    print("Strutting...")
+    print(f"{self.name} strutting...")
